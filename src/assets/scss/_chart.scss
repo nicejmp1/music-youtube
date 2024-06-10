@@ -1,0 +1,193 @@
+.music_chart {
+    padding: 0 2rem 2rem 2rem;
+    position: relative;
+
+    >.title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            padding: 1rem;
+            color: var(--pointColor);
+            font-weight: 900;
+        }
+
+        .date {
+            display: block;
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                span {
+                    margin-left: 4px;
+                }
+            }
+
+            .react-datepicker__day--today,
+            .react-datepicker__month-text--today,
+            .react-datepicker__quarter-text--today,
+            .react-datepicker__year-text--today {
+                color: #f00;
+            }
+
+            .react-datepicker__day--selected,
+            .react-datepicker__day--in-selecting-range,
+            .react-datepicker__day--in-range,
+            .react-datepicker__month-text--selected,
+            .react-datepicker__month-text--in-selecting-range,
+            .react-datepicker__month-text--in-range,
+            .react-datepicker__quarter-text--selected,
+            .react-datepicker__quarter-text--in-selecting-range,
+            .react-datepicker__quarter-text--in-range,
+            .react-datepicker__year-text--selected,
+            .react-datepicker__year-text--in-selecting-range,
+            .react-datepicker__year-text--in-range {
+                background-color: var(--pointColor);
+            }
+        }
+    }
+
+    >.list {
+        ul {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            li {
+                display: flex;
+                align-items: center;
+                margin: 4px 0;
+                padding: 5px 20px;
+                border-radius: 50px;
+                cursor: pointer;
+                font-family: var(--fontJ);
+                font-weight: 300;
+
+                .rank {
+                    flex: 0 0 50px;
+                    color: var(--black700);
+                }
+
+                .img {
+                    width: 50px;
+                    height: 50px;
+                    display: inline-block;
+                    margin-right: 20px;
+                    background-size: cover;
+                    border-radius: 5px;
+
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+
+                .title {
+                    flex: 1;
+                }
+
+                .album {
+                    margin-left: auto;
+                    color: var(--black700);
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    background-color: var(--white);
+
+                    .album {
+                        color: var(--black100);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.youtube-result {
+    position: fixed;
+    left: 260px;
+    right: 400px;
+    bottom: 0;
+    height: 40vh;
+    background-color: #efbe55;
+    padding: 1rem;
+    overflow-y: scroll;
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        svg {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+    }
+
+
+
+    ul {
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            &:hover {
+                background-color: #fff;
+                border-radius: 40px;
+            }
+
+            .img {
+                width: 50px;
+                height: 50px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                border-radius: 50%;
+            }
+
+            .title {
+                width: calc(100% - 40px);
+                padding-left: 1rem;
+            }
+
+            .playNow {
+                font-size: 24px;
+                padding-top: 10px;
+                padding-right: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #f00;
+                }
+            }
+
+            .playList {
+                font-size: 24px;
+                padding-top: 10px;
+                padding-right: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #f00;
+                }
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,43 @@
+:root {
+    --fontJ: "Jamsil";
+    --fontAh: "ACCheart";
+    --fontAf: "ACCfall";
+    --fontAs: "ACCsky";
+
+    --black: #000;
+    --black100: #111;
+    --black200: #222;
+    --black300: #333;
+    --black400: #444;
+    --black500: #555;
+    --black600: #666;
+    --black700: #777;
+    --black800: #888;
+    --white: #fff;
+    --white100: #f9f9f9;
+    --white200: #eeeeee;
+    --white300: #dfdfdf;
+    --white400: #cfcfcf;
+    --white500: #bfbfbf;
+
+    --pointColor: #f88741;
+    --mainBg: #f6f8f9;
+
+    // 폰트 셋팅
+    font-family: var(--fontAs), var(--fontJ);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    // 폰트 최적화
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    @media (max-width: 800px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}

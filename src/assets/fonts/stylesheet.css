@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'ACCchildrenheart';
+    src: url('ACCchildrenheart.woff2') format('woff2'),
+        url('ACCchildrenheart.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ACCchildrenfall';
+    src: url('ACCchildrenfall.woff2') format('woff2'),
+        url('ACCchildrenfall.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ACCchildrensky';
+    src: url('ACCchildrensky.woff2') format('woff2'),
+        url('ACCchildrensky.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
